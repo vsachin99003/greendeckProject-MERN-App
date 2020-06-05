@@ -6,6 +6,7 @@ const app = express();
 
 app.use(cors())
 app.use(bodyParser.json())
+const homeRouter = require('./routes/homeprod')
 const productRouter = require('./routes/products');
 const priceRouter = require('./routes/prices');
 const similarRouter = require('./routes/similarprod');
@@ -15,6 +16,7 @@ connectDB();
 app.use(express.json({ extended: false }));
 const Port = process.env.Port || 4000;
 
+app.use('/home',homeRouter)
 app.use('/products',productRouter)
 app.use('/prices',priceRouter)
 app.use('/similar',similarRouter)

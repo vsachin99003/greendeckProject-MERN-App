@@ -11,16 +11,16 @@ class Navbar extends Component{
                 <div className="collpase navbar-collapse">
                 <ul className="navbar-nav mr-auto">
                 <li className="navbar-item">
-                    <Link to="/" className="nav-link">Products Detail</Link>
+                    <Link to="/brandValue" className="nav-link">Filter by Brand Name</Link>
                 </li>
                 <li className="navbar-item">
-                    <Link to="/productPrice" className="nav-link">Product Price Details filter</Link>
+                    <Link to="/productPrice" className="nav-link">Product Price filters</Link>
                 </li>
                 <li className="navbar-item">
-                    <Link to="/similarProducts" className="nav-link">Similar Products details</Link>
+                    <Link to="/similarProducts" className="nav-link">Price positioning filter</Link>
                 </li>
                 <li className="navbar-item">
-                    <Link to="/stockCreate" className="nav-link">Stocks available </Link>
+                    <Link to="/stockCreate" className="nav-link">Filter by Stocks </Link>
                 </li>
                 </ul>
                 </div>

@@ -6,6 +6,7 @@ import ProductsList from './components/productsList.component';
 import Productprice from './components/productsPrice.component';
 import Similarproducts from './components/similarProducts.component';
 import Stocks from './components/stocks.component';
+import Home from './components/homeProduct.component';
 
 function App() {
   return (
@@ -13,10 +14,11 @@ function App() {
       <div className="container">
       <Navbar />
       <br/>
-      <Route path='/' exact component = {ProductsList}/>
-      <Route path='/productPrice' component = {Productprice} />
-      <Route path ='/similarProducts' component ={Similarproducts} />
+      <Route path ='/' exact component={Home } />
+      <Route path='/brandValue' component = {ProductsList}/>
       <Route path ='/stockCreate' component ={Stocks} />
+      <Route path ='/similarProducts' component ={Similarproducts} />
+      <Route path='/productPrice' component = {Productprice} />
       </div>
     </Router>
   );
